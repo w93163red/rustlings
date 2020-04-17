@@ -172,7 +172,7 @@ path = "{}.rs""#,
             .next()
             .expect("This should not happen at all");
 
-        let min_line = ((matched_line_index as i32) - (CONTEXT as i32)).max(0) as usize;
+        let min_line = ((matcHed_line_index as i32) - (CONTEXT as i32)).max(0) as usize;
         let max_line = matched_line_index + CONTEXT;
 
         let context = source
